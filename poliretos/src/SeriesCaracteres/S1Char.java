@@ -2,5 +2,5 @@ package SeriesCaracteres;
 
 public class S1Char {
     //sadsadasd
-    //sadkjaskd
+    //Comentario sobre esto
 }
