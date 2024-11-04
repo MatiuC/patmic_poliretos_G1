@@ -3,20 +3,17 @@ package SeriesNumericas;
 import java.util.Scanner;
 
 public class S3Num {
- public static void main(String[] args) {
+    public void SerieNum3() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese la cantidad de términos de la secuencia: ");
         int c = scanner.nextInt();
-
         System.out.println("Generado:");
-
         for (int i = 0; i < c; i++) {
-            int numerador = fibonacci(i); // Obtiene el n-ésimo número de Fibonacci
-            int denominador = 2 * i + 1; // Calcula el denominador
-            System.out.printf("%d/%d ", numerador, denominador); // Imprime la fracción
+            int numerador = fibonacci(i); // obtiene el n-ésimo número de Fibonacci
+            int denominador = 2 * i + 1; // calcula el denominador
+            System.out.printf("%d/%d ", numerador, denominador); // imprime la fracción
         }
-        
-        scanner.close();
     }
     /**
      * // Método para calcular el n-ésimo número de Fibonacci
