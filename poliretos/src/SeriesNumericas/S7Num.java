@@ -2,7 +2,7 @@ package SeriesNumericas;
 
 public class S7Num {
     
-    public void mostrarSecuencia(int n){
+    public void g1_mostrarSecuencia(int n){
         int variable = 1;
         System.out.print(variable);
     

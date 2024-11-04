@@ -9,11 +9,11 @@ public class App {
         // S10.SerieNum10(10);
         
         S7Num S7 = new S7Num();
-        S7.mostrarSecuencia(20);
+        S7.g1_mostrarSecuencia(20);
         S8Num S8 = new S8Num();
-        S8.mostrarSecuencia(20);
+        S8.g1_mostrarSecuencia(20);
         S9Num S9 = new S9Num();
-        S9.mostrarSecuencia(20);
+        S9.g1_mostrarSecuencia(20);
         
     }
 }
