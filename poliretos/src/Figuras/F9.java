@@ -31,7 +31,7 @@ public class F9 {
                         for (int k = 1; k < (i - 1) * 2; k++) {
                             System.out.print("    "); // Espacios para el medio entre soportes
                         }
-                        System.out.print("  |");       // Imprimir el soporte derecho
+                        System.out.print("   |");       // Imprimir el soporte derecho
                     }
                     System.out.println();
                 }

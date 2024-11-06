@@ -1,55 +1,54 @@
 import Arrays.A03;
-import CadenaCaracteres.C01;
-import CadenaCaracteres.C05;
-import CadenaCaracteres.C09;
-import Figuras.F15;
-import Figuras.F19;
-import Figuras.F4;
-import Figuras.F7;
-import Figuras.F8;
-import Figuras.F9;
-import GrafosAutomatas.Automata01;
-import GrafosAutomatas.Automata02;
-import Loading.L01;
-import Loading.L05;
-import Loading.L09;
-import Loading.L12;
-import SeriesCaracteres.S4Char;
-import SeriesCaracteres.S5Char;
+import CadenaCaracteres.*;
+import Figuras.*;
+import GrafosAutomatas.*;
+import Loading.*;
+import SeriesCaracteres.*;
 import SeriesNumericas.*;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        //Series numéricas 
+        int n=10;
+        // Series numéricas
+        S1Char SC1 = new S1Char();
+        SC1.S1Char(n);
+        System.out.println("");
+        S2Char SC2 = new S2Char();
+        SC2.S2Char(n);
+        System.out.println("");
+        S3Char SC3 = new S3Char();
+        SC3.S3Char(5);
+        System.out.println("");
         S1Num S1 = new S1Num();
-        S2Num S2 = new S2Num(); 
-        S3Num S3 = new S3Num(); 
-        S10Num S10= new S10Num();
+        S2Num S2 = new S2Num();
+        S3Num S3 = new S3Num();
+        S10Num S10 = new S10Num();
         S12Num S12 = new S12Num();
-        //Series caracteres
-        S4Char SC4 = new S4Char(); 
+        // Series caracteres
+        
+        S4Char SC4 = new S4Char();
         S5Char SC5 = new S5Char();
-        //Figuras
+        // Figuras
         F4 Fg4 = new F4();
-        F7 Fg7 = new F7(); 
+        F7 Fg7 = new F7();
         F8 Fg8 = new F8();
         F9 Fg9 = new F9();
-        F15 Fg15 = new F15(); 
-        F19 Fg19 = new F19(); 
-        //Cadena caracteres 
-        C01 CO1 = new C01(); 
+        F15 Fg15 = new F15();
+        F19 Fg19 = new F19();
+        // Cadena caracteres
+        C01 CO1 = new C01();
         C05 CO5 = new C05();
         C09 CO9 = new C09();
-        //Arrays
+        // Arrays
         A03 A3 = new A03();
-        //Loading exercise 
-        L01 Load1= new L01();
+        // Loading exercise
+        L01 Load1 = new L01();
         L05 Load5 = new L05();
         L09 Load9 = new L09();
         L12 Load12 = new L12();
-        //Automatas
+        // Automatas
         Automata01 Aut1 = new Automata01();
         Automata02 Aut2 = new Automata02();
-
 
         S1.SerieNum1();
         System.out.println("");
@@ -61,7 +60,9 @@ public class App {
         System.out.println("");
         S10.SerieNum10(10);
 
-        SC4.caracter4(); 
+
+        
+        SC4.caracter4();
         System.out.println("");
         SC5.caracter5();
         System.out.println("");
