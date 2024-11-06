@@ -19,6 +19,16 @@ public class App {
         S3Char SC3 = new S3Char();
         SC3.S3Char(5);
         System.out.println("");
+        //Draw cuadrado
+        F1 F1 = new F1();
+        F1.dibujarcuadrado(5);
+        System.out.println("");
+        F5 F5 = new F5();
+        System.out.println("");
+        F5.DrawF5(9);
+        F6 F6 = new F6();
+        F6.DrawF6(9);
+        System.out.println("");
         S1Num S1 = new S1Num();
         S2Num S2 = new S2Num();
         S3Num S3 = new S3Num();
