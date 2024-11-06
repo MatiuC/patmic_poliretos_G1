@@ -1,5 +1,6 @@
 import SeriesCaracteres.*;
 import SeriesNumericas.*;
+import Figuras.*;
 public class App {
     public static void main(String[] args) throws Exception {
         // System.out.println("Hello, World!");
@@ -24,5 +25,14 @@ public class App {
 
         S9Char S9 = new S9Char();
         S9.g1_mostrarSecuenciaChar(10);
+
+        F12 F12 = new F12();
+        F12.g1_mostrarFigura(10);
+
+        F13 F13 = new F13();
+        F13.g1_mostrarFigura(10);
+
+        F17 F17 = new F17();
+        F17.g1_mostrarFigura(10);
     }
 }
