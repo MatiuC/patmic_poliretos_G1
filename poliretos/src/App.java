@@ -1,5 +1,6 @@
 import SeriesCaracteres.*;
 import SeriesNumericas.*;
+import CadenaCaracteres.*;
 import Figuras.*;
 public class App {
     public static void main(String[] args) throws Exception {
@@ -34,5 +35,11 @@ public class App {
 
         F17 F17 = new F17();
         F17.g1_mostrarFigura(10);
+
+        C03 C03 = new C03();
+        C03.g1_eliminarVocal();
+
+        C07 C07 = new C07();
+        C07.g1_convertirSinJ();
     }
 }
