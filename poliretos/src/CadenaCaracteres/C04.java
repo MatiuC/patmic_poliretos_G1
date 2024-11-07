@@ -2,11 +2,11 @@ package CadenaCaracteres;
 
 import java.util.Scanner;
 
-
 public class C04 {
-    public void cFrase04 (){
-        //Pedir una frase y una letra, eliminar la letra ingresada de la frase.
-        try (Scanner sc = new Scanner(System.in)) {
+    Scanner sc = new Scanner(System.in);
+    public void cFrase04() {
+        // Pedir una frase y una letra, eliminar la letra ingresada de la frase.
+        
             System.out.println("Introduce una frase: ");
             String frase = sc.nextLine();
             System.out.println("Introduce una letra: ");
@@ -17,9 +17,10 @@ public class C04 {
                     nuevaFrase += frase.charAt(i);
                 }
             }
+            sc.nextLine();
             System.out.println("La frase sin la letra " + letra + " es: " + nuevaFrase);
-            sc.close();
-        }
+           
         
     }
+    
 }

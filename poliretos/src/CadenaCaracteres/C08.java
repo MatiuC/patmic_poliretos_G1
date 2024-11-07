@@ -10,8 +10,9 @@ public class C08 {
             {"Alondra", "Ladrona"},
             {"Enrique", "quieren"}
         };
-
+        
         Scanner scanner = new Scanner(System.in);
+       // scanner.nextLine();
         for (String[] pair : anagramas) {
             String palabra = pair[0];
             String anagrama = pair[1];
