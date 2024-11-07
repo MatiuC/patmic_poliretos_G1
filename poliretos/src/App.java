@@ -4,59 +4,42 @@ import CadenaCaracteres.*;
 import Figuras.*;
 import Arrays.*;
 import Loading.*;
+import Arrays.A03;
+import CadenaCaracteres.*;
+import Figuras.*;
+import GrafosAutomatas.*;
+import Loading.*;
+import SeriesCaracteres.*;
+import SeriesNumericas.*;
+
+
 public class App {
     public static void main(String[] args) throws Exception {
-        // System.out.println("Hello, World!");
-        // S10Num S10= new S10Num();
-        // S12Num S12 = new S12Num();
-        // S12.SerieNum12(10);
-        // System.out.println("");
-        // S10.SerieNum10(10);
-        
-        // S7Num S7 = new S7Num();
-        // S7.g1_mostrarSecuencia(20);
-        // S8Num S8 = new S8Num();
-        // S8.g1_mostrarSecuencia(20);
-        // S9Num S9 = new S9Num();
-        // S9.g1_mostrarSecuencia(20);
-
-        // S7Char S7 = new S7Char();
-        // S7.g1_mostrarSecuenciaChar(6);
-        
-        // S8Char S8 = new S8Char();
-        // S8.g1_mostrarSecuenciaChar(6);
-
-        // S9Char S9 = new S9Char();
-        // S9.g1_mostrarSecuenciaChar(10);
-
-        // F12 F12 = new F12();
-        // F12.g1_mostrarFigura(10);
-
-        // F13 F13 = new F13();
-        // F13.g1_mostrarFigura(10);
-
-        // F17 F17 = new F17();
-        // F17.g1_mostrarFigura(10);
-
-        // C03 C03 = new C03();
-        // C03.g1_eliminarVocal();
-
-        // C07 C07 = new C07();
-        // C07.g1_convertirSinJ();
-
-
-        // A02 A02 = new A02();
-        // A02.g1_matrizIniciales(5);
-
-        L02 L02 = new L02();
-        L02.g1_iniciar();
-
-        
-        L06 L06 = new L06();
-        L06.g1_iniciar();
-
-        L10 L10 = new L10();
-        L10.g1_iniciar();
-
-    }
-}
+        int n=10;
+        // Series numéricas
+        S1Char SC1 = new S1Char();
+        SC1.S1Char(n);
+        System.out.println("");
+        S2Char SC2 = new S2Char();
+        SC2.S2Char(n);
+        System.out.println("");
+        S3Char SC3 = new S3Char();
+        SC3.S3Char(5);
+        System.out.println("");
+        //Draw cuadrado
+        F1 F1 = new F1();
+        F1.dibujarcuadrado(5);
+        System.out.println("");
+        F5 F5 = new F5();
+        System.out.println("");
+        F5.DrawF5(9);
+        F6 F6 = new F6();
+        F6.DrawF6(9);
+        System.out.println("");
+        S1Num S1 = new S1Num();
+        S2Num S2 = new S2Num();
+        S3Num S3 = new S3Num();
+        S10Num S10 = new S10Num();
+        S12Num S12 = new S12Num();
+        // Series caracteres
+  }

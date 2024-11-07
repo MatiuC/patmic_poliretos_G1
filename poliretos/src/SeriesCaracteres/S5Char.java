@@ -3,18 +3,14 @@ package SeriesCaracteres;
 import java.util.Scanner;
 
 public class S5Char {
-    public static void main(String[] args) {
+    public void caracter5() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
-
-        // Solicitar la cantidad de caracteres a imprimir
-        System.out.print("Ingrese la cantidad de operadores a imprimir: ");
+        System.out.print("Ingrese la cantidad de operadores a imprimir:\n ");
         int c = scanner.nextInt();
-
-        // Imprimir la secuencia de caracteres
         System.out.println("Secuencia de caracteres:");
         for (int i = 0; i < c; i++) {
-            String caracter; // Variable para almacenar el carácter actual
-            
+            String caracter; 
             switch (i % 5) {
                 case 0:
                     caracter = "\\"; break;
@@ -31,7 +27,6 @@ public class S5Char {
             }
             System.out.print(caracter + " "); 
         }
-        scanner.close();
     }
 }
 
