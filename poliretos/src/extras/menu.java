@@ -13,13 +13,17 @@ public class menu {
 
         switch (opcion) {
             case 1:
-                System.out.println("Series Numericas");
+               System.out.println("Series Numericas");
                 //Metodo de la serie numerica 1
                 S1Num s1num = new S1Num();
                 s1num.SerieNum1();
                 //Metodo de la serie numerica 2
                 S2Num s2num = new S2Num();
                 s2num.SerieNum2();
+
+                //Metodo de la serie numerica 12
+                S12Num s12num = new S12Num();
+                s12num.SerieNum12(-6);
                 break;
             case 2:
                 System.out.println("Opción 2 seleccionada");

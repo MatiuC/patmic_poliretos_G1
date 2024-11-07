@@ -1,12 +1,13 @@
 package SeriesNumericas;
 
-import java.util.Scanner;
+import extras.validadores;
+
 public class S1Num {
     public void SerieNum1 () {
-        @SuppressWarnings("resource")
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese la cantidad de términos de la secuencia de Fibonacci: ");
-        int c = scanner.nextInt(); //c : cantidad
+        validadores validador = new validadores();
+        
+        int c = validador.solicitarNumeroNatural("Ingrese la cantidad de términos de la secuencia de Fibonacci: ");
+        
         int a = 0, b = 1;
         System.out.println("Secuencia de Fibonacci:");
         for (int i = 0; i < c; i++) {
@@ -17,4 +18,3 @@ public class S1Num {
         }
     }
 }
-
