@@ -19,7 +19,7 @@ public class C04 {
             }
             sc.nextLine();
             System.out.println("La frase sin la letra " + letra + " es: " + nuevaFrase);
-            sc.close();
+           
         
     }
     
