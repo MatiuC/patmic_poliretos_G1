@@ -4,7 +4,7 @@ import Arrays.*;
 import CadenaCaracteres.g1_crearCadenaCaracter;
 import Figuras.*;
 import GrafosAutomatas.g1_crearGrafoAutomata;
-import Loading.g1_crearLoading;
+import Loading.*;
 import Recusion.g1_crearRecursion;
 import SeriesCaracteres.g1_crearSerieCaracter;
 import SeriesNumericas.*;
@@ -150,6 +150,14 @@ public class menu {
             case 6:
                 System.out.println("Opción 6 seleccionada");
                 System.out.println("Loading");
+
+                L12 loading12 = new L12();
+                try {
+                    loading12.loading12();
+                } catch (InterruptedException e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+
                 g1_crearLoading loading = new g1_crearLoading();
 
                 try {
