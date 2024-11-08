@@ -1,12 +1,12 @@
 package extras;
 
 import Arrays.*;
-import CadenaCaracteres.g1_crearCadenaCaracter;
+import CadenaCaracteres.*;
 import Figuras.*;
-import GrafosAutomatas.g1_crearGrafoAutomata;
+import GrafosAutomatas.*;
 import Loading.*;
-import Recusion.g1_crearRecursion;
-import SeriesCaracteres.g1_crearSerieCaracter;
+import Recusion.*;
+import SeriesCaracteres.*;
 import SeriesNumericas.*;
 import java.util.Scanner;
 
