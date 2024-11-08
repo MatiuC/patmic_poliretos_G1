@@ -1,15 +1,14 @@
 package extras;
 
+import Arrays.*;
+import CadenaCaracteres.*;
+import Figuras.*;
+import GrafosAutomatas.*;
+import Loading.*;
+import Recusion.*;
+import SeriesCaracteres.*;
 import SeriesNumericas.*;
 import java.util.Scanner;
-
-import Arrays.g1_crearArray;
-import CadenaCaracteres.g1_crearCadenaCaracter;
-import Figuras.g1_crearFigura;
-import GrafosAutomatas.g1_crearGrafoAutomata;
-import Loading.g1_crearLoading;
-import Recusion.g1_crearRecursion;
-import SeriesCaracteres.g1_crearSerieCaracter;
 
 
 public class menu {
@@ -21,13 +20,18 @@ public class menu {
 
         switch (opcion) {
             case 1:
-                System.out.println("Series Numericas");
+               System.out.println("Series Numericas");
                 //Metodo de la serie numerica 1
                 S1Num s1num = new S1Num();
                 s1num.SerieNum1();
                 //Metodo de la serie numerica 2
                 S2Num s2num = new S2Num();
                 s2num.SerieNum2();
+
+                //Metodo de la serie numerica 12
+                S12Num s12num = new S12Num();
+                s12num.SerieNum12(-6);
+
                 //Secuencia S4     
                 System.out.print("Ingrese un numero para la secuencia S4? ");
                 int tamanoS4 = scanner.nextInt();
@@ -92,7 +96,9 @@ public class menu {
                 int nivelesF16 = scanner.nextInt();
                 figura16.figuraF16(nivelesF16);
                 System.out.println();
-
+                //Figura F18
+                F18 figura18 = new F18();
+                figura18.DrawF18(5);
                 break;
             case 4:
                 System.out.println("Opción 4 seleccionada");
@@ -110,11 +116,12 @@ public class menu {
                 System.out.println();
                 break;
             case 5:
+                scanner.nextLine();
                 System.out.println("Opción 5 seleccionada");
                 System.out.println("Arrays");
                  //Arrays
                 g1_crearArray arraySerie = new g1_crearArray();
-                // Ejercicio 1: Barras de carga para cada palabra del nombre
+                // Ejercicio 1: Barras de carga para cada palabra del nombre, validar los datos que entran. Revisar la salida
                 System.out.print("Ingrese su nombre completo: ");
                 String nombreCompleto = scanner.nextLine();
                 String[] palabras = nombreCompleto.split(" ");
@@ -131,10 +138,26 @@ public class menu {
                 System.out.print("Ingrese su nombre completo para la matriz: ");
                 nombreCompleto = scanner.nextLine();
                 arraySerie.llenarMatrizConNombre(nombreCompleto);
+
+                //Array 04
+                System.out.println("Ejercicio 04");
+                A04 array04 = new A04();
+                array04.executeA04("eduardo", "castro");
                 break;
+
+                
+
             case 6:
                 System.out.println("Opción 6 seleccionada");
                 System.out.println("Loading");
+
+                L12 loading12 = new L12();
+                try {
+                    loading12.loading12();
+                } catch (InterruptedException e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+
                 g1_crearLoading loading = new g1_crearLoading();
 
                 try {
