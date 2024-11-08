@@ -1,8 +1,8 @@
 package extras;
 
-import Arrays.g1_crearArray;
+import Arrays.*;
 import CadenaCaracteres.g1_crearCadenaCaracter;
-import Figuras.g1_crearFigura;
+import Figuras.*;
 import GrafosAutomatas.g1_crearGrafoAutomata;
 import Loading.g1_crearLoading;
 import Recusion.g1_crearRecursion;
@@ -96,7 +96,9 @@ public class menu {
                 int nivelesF16 = scanner.nextInt();
                 figura16.figuraF16(nivelesF16);
                 System.out.println();
-
+                //Figura F18
+                F18 figura18 = new F18();
+                figura18.DrawF18(5);
                 break;
             case 4:
                 System.out.println("Opción 4 seleccionada");
@@ -114,11 +116,12 @@ public class menu {
                 System.out.println();
                 break;
             case 5:
+                scanner.nextLine();
                 System.out.println("Opción 5 seleccionada");
                 System.out.println("Arrays");
                  //Arrays
                 g1_crearArray arraySerie = new g1_crearArray();
-                // Ejercicio 1: Barras de carga para cada palabra del nombre
+                // Ejercicio 1: Barras de carga para cada palabra del nombre, validar los datos que entran. Revisar la salida
                 System.out.print("Ingrese su nombre completo: ");
                 String nombreCompleto = scanner.nextLine();
                 String[] palabras = nombreCompleto.split(" ");
@@ -135,7 +138,15 @@ public class menu {
                 System.out.print("Ingrese su nombre completo para la matriz: ");
                 nombreCompleto = scanner.nextLine();
                 arraySerie.llenarMatrizConNombre(nombreCompleto);
+
+                //Array 04
+                System.out.println("Ejercicio 04");
+                A04 array04 = new A04();
+                array04.executeA04("eduardo", "castro");
                 break;
+
+                
+
             case 6:
                 System.out.println("Opción 6 seleccionada");
                 System.out.println("Loading");
