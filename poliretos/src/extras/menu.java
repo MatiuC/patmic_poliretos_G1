@@ -1,8 +1,5 @@
 package extras;
 
-import SeriesNumericas.*;
-import java.util.Scanner;
-
 import Arrays.g1_crearArray;
 import CadenaCaracteres.g1_crearCadenaCaracter;
 import Figuras.g1_crearFigura;
@@ -10,6 +7,8 @@ import GrafosAutomatas.g1_crearGrafoAutomata;
 import Loading.g1_crearLoading;
 import Recusion.g1_crearRecursion;
 import SeriesCaracteres.g1_crearSerieCaracter;
+import SeriesNumericas.*;
+import java.util.Scanner;
 
 
 public class menu {
@@ -28,12 +27,11 @@ public class menu {
                 //Metodo de la serie numerica 2
                 S2Num s2num = new S2Num();
                 s2num.SerieNum2();
-<<<<<<< HEAD
 
                 //Metodo de la serie numerica 12
                 S12Num s12num = new S12Num();
                 s12num.SerieNum12(-6);
-=======
+
                 //Secuencia S4     
                 System.out.print("Ingrese un numero para la secuencia S4? ");
                 int tamanoS4 = scanner.nextInt();
@@ -52,7 +50,6 @@ public class menu {
                 g1_crearSerieNume compiladorS6 = new g1_crearSerieNume();
                 compiladorS6.serieNumericaS6(tamanoS6);
                 System.out.println();
->>>>>>> 4bc200be3164407d3a31bb8aa8d6d261fb51a70d
                 break;
             case 2:
                 System.out.println("Opción 2 seleccionada");
