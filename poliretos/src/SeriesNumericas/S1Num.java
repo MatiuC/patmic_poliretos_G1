@@ -1,13 +1,9 @@
 package SeriesNumericas;
 
-import extras.validadores;
+
 
 public class S1Num {
-    public void SerieNum1 () {
-        validadores validador = new validadores();
-        
-        int c = validador.solicitarNumeroNatural("Ingrese la cantidad de términos de la secuencia de Fibonacci: ");
-        
+    public void SerieNum1 (int c) {
         int a = 0, b = 1;
         System.out.println("Secuencia de Fibonacci:");
         for (int i = 0; i < c; i++) {
@@ -16,5 +12,6 @@ public class S1Num {
             a = b;
             b = s;
         }
+        System.out.println();
     }
 }

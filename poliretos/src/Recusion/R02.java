@@ -11,6 +11,7 @@ public class R02 {
     }
 
     public void leerYSumar() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese el primer número: ");
         int a = scanner.nextInt();

@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class A02 {
     public void g1_matrizIniciales(int tamano) {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         
         System.out.print("Ingrese su nombre y apellido: ");

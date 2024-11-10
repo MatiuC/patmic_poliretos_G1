@@ -23,10 +23,10 @@ public class menu {
                System.out.println("Series Numericas");
                 //Metodo de la serie numerica 1
                 S1Num s1num = new S1Num();
-                s1num.SerieNum1();
+                s1num.SerieNum1(5);
                 //Metodo de la serie numerica 2
                 S2Num s2num = new S2Num();
-                s2num.SerieNum2();
+                s2num.SerieNum2(5);
 
                 //Metodo de la serie numerica 12
                 S12Num s12num = new S12Num();
