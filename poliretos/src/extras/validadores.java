@@ -10,6 +10,7 @@ public class validadores {
     }
 
     public int solicitarNumeroNatural(String mensaje) {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         int numero;
         do {

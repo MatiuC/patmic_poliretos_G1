@@ -30,10 +30,4 @@ public void array03() {
     // Mostrar el eje X sin números
     System.out.println(" -----------------------------");
 }
-
-
-
-
-
-
 }

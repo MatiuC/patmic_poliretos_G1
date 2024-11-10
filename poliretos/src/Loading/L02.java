@@ -6,7 +6,8 @@ public class L02 {
   private char caracterCarga;
   
   public void g1_iniciar() {
-      Scanner scanner = new Scanner(System.in);
+      @SuppressWarnings("resource")
+    Scanner scanner = new Scanner(System.in);
       System.out.print("Ingrese el carácter para la barra de progreso: ");
       caracterCarga = scanner.next().charAt(0);
       
