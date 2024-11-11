@@ -4,24 +4,22 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Automata03 {
+public class Automata04 {
     // Matriz de transicion
-    //   'a'   'b'   'c'  ENTER
     private final int matrizTransicion[][] = {
-        // a      b      c    ENTER
-        {  1,    -1,    -1,   -1  },  // q0
-        {  1,     2,    -1,   -1 },  // q1
-        {  -1,    2,     3,    -1 },  // q2
-        {  -1,   -1,     3,    100 }   // q3
+        // 0      1     ENTER
+        {  -1,     1,    -1  },  // q0
+        {   2,     1,    -1 },  // q1
+        {   2,     3,     100 },  // q2
+        {   -1,    3,     100 }, //q3
     };
 
     // Devuelve el índice correspondiente a cada carácter, indice de mi alfabeto
     private int getIndexAlfabeto(char c) {
         switch (c) {
-            case 'a': return 0;
-            case 'b': return 1;
-            case 'c': return 2;
-            case '\n': return 3; // Estado de aceptación, `ENTER`
+            case '0': return 0;
+            case '1': return 1;
+            case '\n': return 2; // Estado de aceptación, `ENTER`
             default: return -1; // Carácter no reconocido
         }
     }
@@ -42,7 +40,7 @@ public class Automata03 {
         }
 
         // Verifica si el estado final es un estado de aceptación (100)
-        return currentState == 3 ;
+        return currentState == 3 || currentState == 2;
     }
 
     // Lee y procesa cada línea de un archivo de texto
