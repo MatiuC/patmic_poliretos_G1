@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 
 public class menu {
-    public void menu() {
+    public void mostrar_menu() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese un número del 1 al 8:\n1. Series Numericas\n2. Series de caracteres\n3. Figuras\n4. Cadena de caracteres");
         System.out.print("\n5. Arreglos\n6. Loading\n7. Recursion\n8. Grafos y Automatas\n");

@@ -3,7 +3,7 @@ package CadenaCaracteres;
 import java.util.Scanner;
 
 public class C08 {
-    public void C08() {
+    public void C08_G1() {
         String[][] anagramas = {
             {"delira", "lidera"},
             {"Ballena", "llenaba"},
