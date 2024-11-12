@@ -2,6 +2,7 @@ package SeriesCaracteres;
 
 public class S9Char {
     public void g1_mostrarSecuenciaChar(int n) {
+        System.out.println("Secuencia de caracteres: S9");
         char caracter = 'a';
         int prevPrev = 1; 
         int prev = 1;   

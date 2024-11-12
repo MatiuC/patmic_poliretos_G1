@@ -3,6 +3,7 @@ package SeriesNumericas;
 public class S7Num {
     
     public void g1_mostrarSecuencia(int n){
+        System.out.println("Secuencia de números: S7");
         int variable = 1;
         System.out.print(variable);
     

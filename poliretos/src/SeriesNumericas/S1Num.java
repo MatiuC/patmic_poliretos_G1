@@ -1,7 +1,5 @@
 package SeriesNumericas;
 
-
-
 public class S1Num {
     public void SerieNum1 (int c) {
         int a = 0, b = 1;

@@ -1,8 +1,8 @@
 package CadenaCaracteres;
-
 import java.util.Scanner;
 
 public class C08 {
+    
     public void C08_G1() {
         String[][] anagramas = {
             {"delira", "lidera"},
@@ -11,8 +11,8 @@ public class C08 {
             {"Enrique", "quieren"}
         };
         
-        Scanner scanner = new Scanner(System.in);
-       // scanner.nextLine();
+        Scanner sk = new Scanner(System.in);
+        //sk.nextLine();
         for (String[] pair : anagramas) {
             String palabra = pair[0];
             String anagrama = pair[1];
@@ -20,13 +20,18 @@ public class C08 {
 
             boolean correct = false;
             for (int i = 0; i < 3; i++) {
-                String input = scanner.nextLine();
-                if (input.equalsIgnoreCase(anagrama)) {
-                    System.out.println("Correcto!");
-                    correct = true;
-                    break;
+                if (sk.hasNextLine()) {
+                    String input = sk.nextLine();
+                    if (input.equalsIgnoreCase(anagrama)) {
+                        System.out.println("Correcto!");
+                        correct = true;
+                        break;
+                    } else {
+                        System.out.println("Incorrecto. Te quedan " + (2 - i) + " intentos.");
+                    }
                 } else {
-                    System.out.println("Incorrecto. Te quedan " + (2 - i) + " intentos.");
+                    System.out.println("No se encontró una línea de entrada.");
+                    break;
                 }
             }
 
@@ -34,7 +39,7 @@ public class C08 {
                 System.out.println("La respuesta correcta era: " + anagrama);
             }
         }
-        scanner.close();
+        
+        }
     }
     
-}

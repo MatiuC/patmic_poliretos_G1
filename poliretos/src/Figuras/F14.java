@@ -2,6 +2,8 @@ package Figuras;
 
 public class F14 {
     public void DrawF14(int n){
+        System.out.println("Dibujando figura 14:");
+        
         for (int i = 0; i < n; i++) {
             // Espacios iniciales para centrar el triángulo
             for (int j = 1; j <= n - i - 1; j++) {

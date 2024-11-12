@@ -2,6 +2,7 @@ package Figuras;
 
 public class F18 {
     public void DrawF18(int filas) {
+        System.out.println("Dibujando figura 18:");
         ///Realizar con matrices
         for (int f = 1; f <= filas; f++) {
             for (int c = 1; c <= f; c++) {
