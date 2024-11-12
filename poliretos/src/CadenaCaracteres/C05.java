@@ -1,13 +1,8 @@
 package CadenaCaracteres;
-
-import java.util.Scanner;
-
 public class C05 {
-public void cadena5() {
-        @SuppressWarnings("resource")
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese una frase: ");
-        String frase = scanner.nextLine();
+public void cadena5(String frase) {
+        System.out.print("Invierte una frase:  ");
+        
         StringBuilder fraseInvertida = new StringBuilder();// Invertir la frase y convertir vocales a mayúsculas
         for (int i = frase.length() - 1; i >= 0; i--) {
             char letra = frase.charAt(i);

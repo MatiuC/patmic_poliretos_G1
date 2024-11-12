@@ -2,6 +2,7 @@ package Figuras;
 
 public class F6 {
     public void DrawF6(int n){
+        System.out.println("Dibujando figura 6:");
         //Dibujar piramide tamaño n
 
         for (int f = 1; f <= n; f++) {

@@ -15,6 +15,7 @@ public class R03 {
     }
 
     public void leerYMultiplicar() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese el primer número: ");
         int a = scanner.nextInt();

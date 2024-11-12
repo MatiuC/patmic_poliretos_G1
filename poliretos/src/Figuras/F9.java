@@ -1,15 +1,10 @@
 package Figuras;
 
-import java.util.Scanner;
-
 public class F9 {
- public void figura9() {
-            @SuppressWarnings("resource")
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Ingrese el número de niveles de la pirámide: ");
-            int niveles = scanner.nextInt();
-            for (int i = 1; i <= niveles; i++) {
-                for (int j = niveles; j > i; j--) {// Espacios a la izquierda para centrar cada nivel de la pirámide
+ public void figura9(int c) {
+            System.out.println("Pirámide:  ");
+            for (int i = 1; i <= c; i++) {
+                for (int j = c; j > i; j--) {// Espacios a la izquierda para centrar cada nivel de la pirámide
                     System.out.print("    "); // Espacios para alinear la pirámide
                 }
                 System.out.print("___");        // Imprimir el borde superior izquierdo
@@ -21,8 +16,8 @@ public class F9 {
                 }
                 System.out.println();
     
-                if (i < niveles) { // No imprimir soportes en el último nivel
-                    for (int j = niveles; j > i; j--) {
+                if (i < c) { // No imprimir soportes en el último nivel
+                    for (int j = c; j > i; j--) {
                         System.out.print("    "); // Espacios para alinear el soporte
                     }
                     

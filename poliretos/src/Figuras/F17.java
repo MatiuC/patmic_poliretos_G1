@@ -2,6 +2,7 @@ package Figuras;
 
 public class F17 {
     public void g1_mostrarFigura(int n) {
+        System.out.println("Dibujando figura 17:");
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
                 if(i == j || i + j == n-1) {

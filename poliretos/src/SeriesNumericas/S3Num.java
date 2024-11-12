@@ -1,13 +1,7 @@
 package SeriesNumericas;
 
-import java.util.Scanner;
-
 public class S3Num {
-    public void SerieNum3() {
-        @SuppressWarnings("resource")
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese la cantidad de términos de la secuencia: ");
-        int c = scanner.nextInt();
+    public void SerieNum3(int c) {
         System.out.println("Generado:");
         for (int i = 0; i < c; i++) {
             int numerador = fibonacci(i); // obtiene el n-ésimo número de Fibonacci
