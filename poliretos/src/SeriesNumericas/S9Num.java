@@ -3,6 +3,7 @@ package SeriesNumericas;
 public class S9Num {
     
     public void g1_mostrarSecuencia(int n){
+        System.out.println("Secuencia de números: S9");
         int variable = 2;
         System.out.print(variable);
     

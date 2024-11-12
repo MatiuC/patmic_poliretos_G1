@@ -3,7 +3,7 @@ package Figuras;
 public class F19 {
  public void figura19(int c ) {
 
-        System.out.print("Pirámide con números y caracteres:");
+        System.out.println("Pirámide con números y caracteres:");
         int[][] sequence = new int[c][];   // inicializar la primera fila con solo "*"
         sequence[0] = new int[]{2};  // "*" representado como 2
 

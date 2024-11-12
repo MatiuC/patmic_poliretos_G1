@@ -2,7 +2,7 @@ package Figuras;
 
 public class F9 {
  public void figura9(int c) {
-            System.out.print("Pirámide:  ");
+            System.out.println("Pirámide:  ");
             for (int i = 1; i <= c; i++) {
                 for (int j = c; j > i; j--) {// Espacios a la izquierda para centrar cada nivel de la pirámide
                     System.out.print("    "); // Espacios para alinear la pirámide

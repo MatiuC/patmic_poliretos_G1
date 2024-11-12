@@ -3,7 +3,7 @@ package SeriesCaracteres;
 public class g1_crearSerieCaracter {
     
     public void serieCaracterS61(int tamano) {
-        
+        System.out.println("Secuencia de caracteres: S6.a");
         for (int i = 0; i < tamano; i++) {
             if (i % 2 == 0) { 
                 char letra = (char) ('a' + (i / 2)); 
@@ -20,6 +20,7 @@ public class g1_crearSerieCaracter {
     }
 
     public void serieCaracterS62(int tamano) {
+        System.out.println("Secuencia de caracteres: S6.b");
         for (char letra = 'a'; letra < 'a' + tamano; letra++) {
             System.out.print(letra + " ");
         }

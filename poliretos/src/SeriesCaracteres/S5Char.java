@@ -1,7 +1,7 @@
 package SeriesCaracteres;
 public class S5Char {
     public void caracter5(int c) {
-        System.out.println("Secuencia de caracteres:");
+        System.out.println("Secuencia de caracteres: S5");
         for (int i = 0; i < c; i++) {
             String caracter; 
             switch (i % 5) {

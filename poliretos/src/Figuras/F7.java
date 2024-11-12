@@ -2,7 +2,7 @@ package Figuras;
 
 public class F7 {
  public void figura7(int c) {
-        System.out.print("Escalones hacia la derecha: ");
+        System.out.println("Escalones hacia la derecha: ");
         for (int i = 1; i <= c; i++) {
             for (int j = 1; j < i; j++) {    // espacios para alinear el escalón en diagonal
                 System.out.print("     ");
