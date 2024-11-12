@@ -1,14 +1,9 @@
 package Figuras;
 
-import java.util.Scanner;
-
 public class F7 {
- public void figura7() {
-        @SuppressWarnings("resource")
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el número de escalones: ");
-        int escalones = scanner.nextInt();
-        for (int i = 1; i <= escalones; i++) {
+ public void figura7(int c) {
+        System.out.println("Escalones hacia la derecha: ");
+        for (int i = 1; i <= c; i++) {
             for (int j = 1; j < i; j++) {    // espacios para alinear el escalón en diagonal
                 System.out.print("     ");
             }

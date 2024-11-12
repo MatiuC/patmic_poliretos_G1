@@ -1,12 +1,7 @@
 package SeriesNumericas;
 
-import java.util.Scanner;
 public class S1Num {
-    public void SerieNum1 () {
-        @SuppressWarnings("resource")
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese la cantidad de términos de la secuencia de Fibonacci: ");
-        int c = scanner.nextInt(); //c : cantidad
+    public void SerieNum1 (int c) {
         int a = 0, b = 1;
         System.out.println("Secuencia de Fibonacci:");
         for (int i = 0; i < c; i++) {
@@ -15,6 +10,6 @@ public class S1Num {
             a = b;
             b = s;
         }
+        System.out.println();
     }
 }
-

@@ -1,13 +1,10 @@
 package CadenaCaracteres;
 
-import java.util.Scanner;
-
 public class C09 {
-public void cadena9() {
-        @SuppressWarnings("resource")
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese una frase: ");
-        String frase = scanner.nextLine();
+public void cadena9(String frase) {
+
+        System.out.print("Cambia cada letra por una mayúscula o minúscula de una frase:");
+
         StringBuilder resultado = new StringBuilder();
         for (int i = 0; i < frase.length(); i++) {
             char letra = frase.charAt(i);

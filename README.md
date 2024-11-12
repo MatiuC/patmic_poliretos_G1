@@ -1,7 +1,8 @@
 # patmic_poliretos_G1
-# Getting Started
+# Grupo 1
+Escuela Politecnica Nacional
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Facultad de Ingenieria en sistemas
 
 ## Folder Structure
 

@@ -1,17 +1,13 @@
 package Figuras;
 
-import java.util.Scanner;
-
 public class F19 {
- public void figura19() {
-        @SuppressWarnings("resource")
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el número de filas: ");
-        int filas = scanner.nextInt();
-        int[][] sequence = new int[filas][];   // Inicializar la primera fila con solo "*"
+ public void figura19(int c ) {
+
+        System.out.println("Pirámide con números y caracteres:");
+        int[][] sequence = new int[c][];   // inicializar la primera fila con solo "*"
         sequence[0] = new int[]{2};  // "*" representado como 2
 
-        for (int i = 1; i < filas; i++) {
+        for (int i = 1; i < c; i++) {
             sequence[i] = new int[i + 1];
             sequence[i][0] = 1;  // Primer elemento es siempre "+"
             sequence[i][i] = 2;  // Último elemento es siempre "*"
@@ -21,7 +17,7 @@ public class F19 {
             }
         }
      
-        for (int i = 0; i < filas; i++) { //patron 
+        for (int i = 0; i < c; i++) { //patron 
             for (int j = 0; j < sequence[i].length; j++) {
                 if (sequence[i][j] == 1) {
                     System.out.print("+ ");
