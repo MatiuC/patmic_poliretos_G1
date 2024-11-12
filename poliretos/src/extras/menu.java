@@ -261,9 +261,9 @@ public class menu {
                 try {
                     System.out.print("Ingrese un caracter para el desplazamiento: ");
                    char caracter = scanner.next().charAt(0);
-                   System.out.print("Ingrese la duración de la animación en milisegundos (ej: 200): ");
-                   int duracionL03 = scanner.nextInt();
-                   loading.animarL03(caracter, duracionL03);
+                   /*System.out.print("Ingrese la duración de la animación en milisegundos (ej: 200): ");
+                   int duracionL03 = scanner.nextInt();*/
+                   loading.animarL03(caracter, 150);
                 } catch (InterruptedException e) {
                     System.out.println("La animación fue interrumpida.");
                 }
@@ -289,10 +289,10 @@ public class menu {
                     System.out.println("La animación fue interrumpida.");
                 }
                 //l07
-                System.out.print("Ingrese la duración de la animación para L07 en milisegundos (ej: 200): ");
-                   int duracionL07 = scanner.nextInt();
+                /*System.out.print("Ingrese la duración de la animación para L07 en milisegundos (ej: 200): ");
+                   int duracionL07 = scanner.nextInt();*/
                 try {
-                    loading.animarL07(duracionL07);
+                    loading.animarL07(150);
                 } catch (InterruptedException e) {
                     System.out.println("La animación fue interrumpida.");
                 }
@@ -326,10 +326,10 @@ public class menu {
                 // Ejercicio L11: Señal simétrica
                 System.out.print("Ingrese el número de niveles para la señal: ");
                 int niveles = scanner.nextInt();
-                System.out.print("Ingrese la duración de la animación para L11 en milisegundos (ej: 200): ");
-                int duracionL11 = scanner.nextInt();
+                /*System.out.print("Ingrese la duración de la animación para L11 en milisegundos (ej: 200): ");
+                int duracionL11 = scanner.nextInt();*/
                 try {
-                    loading.animarL11(duracionL11, niveles);
+                    loading.animarL11(250, niveles);
                 } catch (InterruptedException e) {
                     System.out.println("La animación fue interrumpida.");
                 }
