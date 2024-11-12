@@ -1,5 +1,4 @@
 package GrafosAutomatas;
-
 import java.util.Scanner;
 
 public class Automata07 {
