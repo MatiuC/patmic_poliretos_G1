@@ -10,7 +10,7 @@ public class C08 {
             {"Alondra", "Ladrona"},
             {"Enrique", "quieren"}
         };
-        
+        @SuppressWarnings("resource")
         Scanner sk = new Scanner(System.in);
         //sk.nextLine();
         for (String[] pair : anagramas) {

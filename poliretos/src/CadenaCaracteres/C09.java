@@ -4,7 +4,7 @@ public class C09 {
 public void cadena9(String frase) {
 
         System.out.print("Cambia cada letra por una mayúscula o minúscula de una frase:");
-
+        @SuppressWarnings("resource")
         StringBuilder resultado = new StringBuilder();
         for (int i = 0; i < frase.length(); i++) {
             char letra = frase.charAt(i);

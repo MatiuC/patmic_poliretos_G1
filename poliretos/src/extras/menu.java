@@ -178,7 +178,8 @@ public class menu {
                 //cadena 05
                 C05 cadena05 = new C05();
                 System.out.print("Ingrese una frase para invertir: ");
-                cadena05.cadena5(scanner.nextLine());
+                String fraseInvertir = scanner.nextLine();
+                cadena05.cadena5(fraseInvertir);
                 //Cadena 06
                 g1_crearCadenaCaracter compiladorCadena = new g1_crearCadenaCaracter();
                 System.out.print("Ingresa una frase para invertir: ");
@@ -189,18 +190,22 @@ public class menu {
                 System.out.print("Ingrese una frase para presentarla sin la J: ");
                 cadena07.g1_convertirSinJ();
                 //Cadena 08
-                /*C08 cadena08 = new C08();
+                C08 cadena08 = new C08();
                 System.out.print("Anagrama de palabras: ");
-                cadena08.C08_G1();*/
+                cadena08.C08_G1();
                 //Cadena 09
+                
                 C09 cadena09 = new C09();
                 System.out.print("Ingrese una frase para convertir mayusculas a minusculas y viseversa: ");
-                cadena09.cadena9(scanner.nextLine());
+                String fraseCadena = scanner.nextLine();
+                cadena09.cadena9(fraseCadena);
                 
-                //scanner.nextLine();
-                System.out.println("Opción 5 seleccionada");
-                System.out.println("Arrays");
-                 //Arrays
+
+
+
+                scanner.nextLine();
+                System.out.println("ARRAYS");
+                //Arrays
                 g1_crearArray arraySerie = new g1_crearArray();
                 // Ejercicio 1: Barras de carga para cada palabra del nombre, validar los datos que entran. Revisar la salida
                 System.out.print("Ingrese su nombre completo: ");
@@ -215,23 +220,120 @@ public class menu {
                 arraySerie.mostrarCargaNombre(palabras, porcentajes);
                 System.out.println();
 
-                // Ejercicio 2: Llenar matriz con letras del nombre
+                //Array 02 
+                A02 array02 = new A02();
+                System.out.print("Ingrese el tamaño de la matriz: ");
+                int tamano = scanner.nextInt();
+                array02.g1_matrizIniciales(tamano);
+
+                //ARRAY 03 
+                A03 array03 = new A03();
+                array03.array03();
+                //Array 04
+                System.out.println("Ejercicio 04");
+                A04 array04 = new A04();
+                System.out.print("Ingrese su nombre: ");
+                scanner.nextLine();
+                String nombre = scanner.nextLine();
+                System.out.print("Ingrese su apellido: ");
+                String apellido = scanner.nextLine();
+                array04.executeA04(nombre, apellido);
+           
+                // Ejercicio 5: Llenar matriz con letras del nombre
                 System.out.print("Ingrese su nombre completo para la matriz: ");
                 nombreCompleto = scanner.nextLine();
                 arraySerie.llenarMatrizConNombre(nombreCompleto);
 
-                //Array 04
-                System.out.println("Ejercicio 04");
-                A04 array04 = new A04();
-                array04.executeA04("eduardo", "castro");
-           
 
-                
-
-        
-                System.out.println("Opción 6 seleccionada");
-                System.out.println("Loading");
-
+                System.out.println("LOADINGS");
+                //l01
+                L01 loading1 = new L01();
+                try {
+                    loading1.loading1();
+                } catch (Exception e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //l02
+                L02 loading2 = new L02();
+                loading2.g1_iniciar();
+                //l03
+                g1_crearLoading loading = new g1_crearLoading();
+                try {
+                    System.out.print("Ingrese un caracter para el desplazamiento: ");
+                   char caracter = scanner.next().charAt(0);
+                   System.out.print("Ingrese la duración de la animación en milisegundos (ej: 200): ");
+                   int duracionL03 = scanner.nextInt();
+                   loading.animarL03(caracter, duracionL03);
+                } catch (InterruptedException e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //l04
+                L04 loading4 = new L04();
+                try {
+                    loading4.L04_G1();
+                } catch (Exception e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //l05
+                L05 loading5 = new L05();
+                try {
+                    loading5.loading5();
+                } catch (Exception e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //l06
+                L06 loading6 = new L06();
+                try {
+                    loading6.g1_iniciar();
+                } catch (Exception e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //l07
+                System.out.print("Ingrese la duración de la animación para L07 en milisegundos (ej: 200): ");
+                   int duracionL07 = scanner.nextInt();
+                try {
+                    loading.animarL07(duracionL07);
+                } catch (InterruptedException e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //l08
+                L08 loading8 = new L08();
+                scanner.nextLine();
+                System.out.println("Ingrese el nombre de la persona: ");
+                String nombrePersona = scanner.nextLine();
+                System.out.println("Ingrese el apellido de la persona: ");
+                String apellidoPersona = scanner.nextLine();
+                try {
+                    loading8.L08_G1(nombrePersona, apellidoPersona);
+                } catch (Exception e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //l09
+                L09 loading9 = new L09();
+                try {
+                    loading9.loading9();
+                } catch (Exception e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //l10
+                L10 loading10 = new L10();
+                try {
+                    loading10.g1_iniciar();
+                } catch (Exception e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //l11
+                // Ejercicio L11: Señal simétrica
+                System.out.print("Ingrese el número de niveles para la señal: ");
+                int niveles = scanner.nextInt();
+                System.out.print("Ingrese la duración de la animación para L11 en milisegundos (ej: 200): ");
+                int duracionL11 = scanner.nextInt();
+                try {
+                    loading.animarL11(duracionL11, niveles);
+                } catch (InterruptedException e) {
+                    System.out.println("La animación fue interrumpida.");
+                }
+                //Loading
                 L12 loading12 = new L12();
                 try {
                     loading12.loading12();
@@ -239,41 +341,12 @@ public class menu {
                     System.out.println("La animación fue interrumpida.");
                 }
 
-                g1_crearLoading loading = new g1_crearLoading();
-
-                try {
-                   // Ejercicio L03: Desplazamiento de carácter
-                   System.out.print("Ingrese un caracter para el desplazamiento: ");
-                   char caracter = scanner.next().charAt(0);
-                   System.out.print("Ingrese la duración de la animación en milisegundos (ej: 200): ");
-                   int duracionL03 = scanner.nextInt();
-                   loading.animarL03(caracter, duracionL03);
-
-                   // Ejercicio L07: Barra con movimiento rotacional
-                   System.out.print("Ingrese la duración de la animación para L07 en milisegundos (ej: 200): ");
-                   int duracionL07 = scanner.nextInt();
-                   loading.animarL07(duracionL07);
-
-                   // Ejercicio L11: Señal simétrica
-                   System.out.print("Ingrese el número de niveles para la señal: ");
-                   int niveles = scanner.nextInt();
-                   System.out.print("Ingrese la duración de la animación para L11 en milisegundos (ej: 200): ");
-                   int duracionL11 = scanner.nextInt();
-                   loading.animarL11(duracionL11, niveles);
-
-                }catch (InterruptedException e) {
-                   System.out.println("La animación fue interrumpida.");
-                }finally {
-                   scanner.close();
-                }
-      
-           
-                System.out.println("Opción 7 seleccionada");
-                System.out.println("Recursion");
+                
+                System.out.println("RECURSION");
+                
                 // Recursion
         
                 g1_crearRecursion recursion = new g1_crearRecursion();
-
                 // Ejercicio R04: Potencia
                 System.out.print("Ingrese la base para la potencia: ");
                 int base = scanner.nextInt();
@@ -295,11 +368,33 @@ public class menu {
                 System.out.println("Conteo regresivo desde " + numeroRegresivo + ":");
                 recursion.conteoRegresivo(numeroRegresivo);
                
-                System.out.println("Opción 8 seleccionada");
-                System.out.println("Grafos y automatas");
+                
+                System.out.println("\nGrafos y automatas");
+
+
                 //Serie Grafos y automatas
+
+                //A01
+                Automata01 automata01 = new Automata01();
+                automata01.autom1();
+
+                //A02
+                Automata02 automata02 = new Automata02();
+                automata02.autom2();
+                 
+                //A03
+                Automata03 automata03 = new Automata03();
+                automata03.processFile("poliretos/src/assets/data.txt");
+
+                //A04
+                Automata04 automata04 = new Automata04();
+                automata04.processFile("poliretos/src/assets/data1.txt");
+
+
+
                 g1_crearGrafoAutomata grafoAutomata = new g1_crearGrafoAutomata();
                 // A04: Validación de número decimal
+                scanner.nextLine();
                 System.out.print("Ingrese un número para verificar si es decimal: ");
                 String numeroDecimal = scanner.nextLine();
                 boolean esDecimal = grafoAutomata.esNumeroDecimal(numeroDecimal);
