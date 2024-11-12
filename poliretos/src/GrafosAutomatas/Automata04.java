@@ -45,14 +45,17 @@ public class Automata04 {
 
     // Lee y procesa cada línea de un archivo de texto
     public void processFile(String fileName) {
+        System.out.println("Automata para validar 1+/0+1*");
+        int lineNumber = 1;
         try (Scanner scanner = new Scanner(new File(fileName))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 if (processString(line)) {
-                    System.out.println("Cadena válida");
+                    System.out.println(lineNumber + " .-Cadena válida");
                 } else {
-                    System.out.println("Cadena no válida");
+                    System.out.println(lineNumber + " .-Cadena no válida");
                 }
+                lineNumber++;
             }
         } catch (FileNotFoundException e) {
             System.err.println("Archivo no encontrado: " + fileName);

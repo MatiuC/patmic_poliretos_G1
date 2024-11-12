@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class C07 {
     public void g1_convertirSinJ() {
-        try (Scanner sc = new Scanner(System.in)) {
+        @SuppressWarnings("resource")
+        Scanner sc = new Scanner(System.in);
             System.out.print("Ingrese la frase: ");
             String frase = sc.nextLine();
             
@@ -18,6 +19,8 @@ public class C07 {
             }
             
             System.out.println("Resultado: " + resultado.toString());
+        
         }
+        
     }
-}
+
