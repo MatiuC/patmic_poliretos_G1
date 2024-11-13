@@ -89,6 +89,7 @@ public class Automata06 {
         }
     }
 
+    @SuppressWarnings("unused")
     private boolean buscarCaminoAOK(int estadoActual, int columna) {
         if (estadoActual == OK) {
             return true;
@@ -102,6 +103,7 @@ public class Automata06 {
     }
 
     public void validarEntrada() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese una línea de texto:");
         String linea = scanner.nextLine();

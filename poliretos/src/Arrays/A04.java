@@ -4,6 +4,7 @@ public class A04 {
     public void executeA04(String nombre, String apellido){
         
 
+        @SuppressWarnings("unused")
         String input;
         int length;
         if (nombre.length() >= apellido.length()) {

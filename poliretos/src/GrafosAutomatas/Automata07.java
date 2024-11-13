@@ -31,6 +31,7 @@ public class Automata07 {
     }
 
     public void validarEntrada() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese una contraseña:");
         String password = scanner.nextLine();
