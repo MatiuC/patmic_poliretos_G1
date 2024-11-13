@@ -13,6 +13,7 @@ import java.util.Scanner;
 
 public class menu {
     public void mostrar_menu() {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.print("GRUPO 1\nAvila Dhalin\nAyala Bryan\nCasa Pizarro\nCastro Eduardo\n");
         System.out.print("Figuras:\nSeleecione el tamaño de sus series\n");
@@ -194,11 +195,10 @@ public class menu {
                 System.out.print("Anagrama de palabras: ");
                 cadena08.C08_G1();
                 //Cadena 09
-                
-                C09 cadena09 = new C09();
-                System.out.print("Ingrese una frase para convertir mayusculas a minusculas y viseversa: ");
-                String fraseCadena = scanner.nextLine();
-                cadena09.cadena9(fraseCadena);
+                C09 c09 = new C09(); 
+                c09.cadena9(); 
+               
+           
                 
 
 

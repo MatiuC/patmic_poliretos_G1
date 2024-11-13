@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class C03 {
     public void g1_eliminarVocal() {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         
         System.out.print("Ingrese la frase: ");
