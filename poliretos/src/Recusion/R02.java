@@ -24,3 +24,4 @@ public class R02 {
         System.out.println("La suma de " + a + " y " + b + " es: " + resultado);
     }
 }
+
