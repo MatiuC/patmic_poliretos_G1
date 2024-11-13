@@ -1,4 +1,5 @@
 package Recusion;
+
 import java.util.Scanner;
 
 public class R02 {
@@ -7,7 +8,9 @@ public class R02 {
         if (b == 0) {
             return a;
         }
-        return g1_suma(a + 1, b - 1);
+        int carry = a & b;
+        int sum = a ^ b;
+        return g1_suma(sum, carry << 1);
     }
 
     public void leerYSumar() {
