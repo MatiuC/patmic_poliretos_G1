@@ -40,5 +40,5 @@ public class L02 {
       if (porcentaje == 100) {
           System.out.println();
       }
-  }
+  } 
 }

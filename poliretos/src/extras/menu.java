@@ -311,7 +311,13 @@ public class menu {
                 System.out.println("Su declaracion de variable " + (esDeclaracionValida ? "si" : "no")+" es valida");
                
                 System.out.println("Opción no válida");
-                
+
+                //Autómata A06
+                Automata06 automata06 = new Automata06();
+                automata06.validarEntrada();
+                //Autómata A07
+                Automata07 automata07 = new Automata07();
+                automata07.validarEntrada();
         }
         
     }
